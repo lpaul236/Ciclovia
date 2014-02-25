@@ -1,42 +1,70 @@
 @charset "utf-8";
 /* CSS Document */
 
-body{
+/* Defines the background color */
+body {
 	background-color:#afea52;
-	margin:0;}
-h1, h2{
-	margin-top:0;}
-ul{
-	margin:0;}
-	
-#header{
+	margin:0;
+}
+
+h1, h2 {
+	margin-top:0;
+}
+
+ul {
+	margin:0;
+}
+
+/* Defines the height of the header and draws a line on the bottom. */
+nav {
 	border-bottom:5px #286305 solid;
 	height:45px;
 }
-#header li{
+
+nav li {
 	list-style:none;
 }
-#header li a{
+
+/* Defines the color of the navigation links */
+nav li a {
 	color:#286305;
 }
-#topNavLeft li{
+
+/* Defines the font style */
+#topNavLeft li {
 	padding:10px;
 	font-size:20px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-weight:bold;
 }
-#topNavLeft li a{
+
+#topNavLeft li a {
 	text-decoration:none;
 }
-#topNavLeft li a:hover{
+
+/* Defines the color of the navigation link when the mouse hovers over it */
+#topNavLeft li a:hover {
 	background-color:#286305;
 	color:#afea52;
 }
-#slideArea{
+
+#topNavRight li {
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#topNavRight li a {
+	text-decoration: none;
+}
+
+/* Inserts image at the front of the page. */
+#slideArea {
 	background-image:url('../media/layout/frontPage.jpg');
 	background-position:center;
 }
-#frontPageContent{
+
+/* Creates background for page content div. */
+#frontPageContent {
 	background-image:url('../media/layout/backgroundGreen.png');
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -44,7 +72,9 @@ ul{
 	padding:30px;
 	color:white;
 }
-#bottomNavLeft li a, #bottomNavRight li a{
+
+/* Defines font style for bottom navigation. */
+#bottomNavLeft li a, #bottomNavRight li a {
 	color:#286305;
 	font-family:Verdana, Geneva, sans-serif;
 	text-decoration:none;

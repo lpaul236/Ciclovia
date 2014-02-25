@@ -1,69 +1,172 @@
 @charset "utf-8";
 /* CSS Document */
 
-#header li{
+nav {
+	width: 100%;
+}
+
+nav li {
 	display:inline-block;
 }
-#topNavRight{
-	float:right;
+
+nav a#pull {
+	display: none;
 }
-#topNavLeft li a{
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+#topNavLeft {
+	float: left;
+}
+
+#topNavLeft li a {
 	padding:10px;
 }
-#slideArea{
+
+#topNavRight {
+	float:right;
+}
+
+#topNavRight li a {
+	padding: 5px;
+}
+
+#slideArea {
 	height:500px;
 	width:100%;
 }
-#socialTop{
+
+#socialTop {
 	float:right;
 	margin-right:40px;
 }
-#socialTop img{
+
+#socialTop img {
 	height:60px;
 	width:auto;
 	padding:10px;
 }
-#frontPageContent{
+
+#frontPageContent {
 	width:960px;
 	margin:0 auto;
 	overflow:auto;
 	position:relative;
 	margin-top:-100px;
 }
-#frontPageLeft{
+
+#frontPageLeft {
 	width:600px;
 }
-#frontPageRight{
+
+#frontPageRight {
 	width:300px;
 	float:right;
 	padding-left:20px;
 	border-left:5px #286305 solid;
 }
-#footer{
+
+#footer {
 	margin-right:30px;
 	margin-top:30px;
 	padding:20px;
 }
-#bottomNavLeft, #bottomNavRight{
+
+#bottomNavLeft, #bottomNavRight {
 	text-align:right;
 }
-#bottomNavLeft li, #bottomNavRight li{
+
+#bottomNavLeft li, #bottomNavRight li {
 	list-style:none;
 	display:inline-block;
 	font-family:Verdana, Geneva, sans-serif;
 }
-#bottomNavLeft li a{
+
+#bottomNavLeft li a {
 	font-size:20px;
 	padding-right:20px;
 }
-#bottomNavRight li a{
+
+#bottomNavRight li a {
 	font-size:16px;
 	padding-right:20px;
 }
-#socialBottom{
+
+#socialBottom {
 	float:right;
 }
-#socialBottom img{
+
+#socialBottom img {
 	width:40px;
 	height:auto;
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		height: auto;
+	}
+	
+	nav ul {
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+	
+	nav li {
+		width: 50%;
+		float: left;
+		position: relative;
+	}
+	
+	nav li a {
+		border-bottom: 1px solid ##286305;
+		border-right: 1px solid ##286305;
+	}
+	
+	nav a {
+		text-align: left;
+		width: 100%;
+		text-indent: 25px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	nav {
+		border-bottom: 0;
+	}
+	
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	
+	nav a#pull {
+		display: block;
+		background-color: #286305;
+		width: 100%;
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	
+	nav li a {
+		border-bottom: 1px solid #286305;
+	}
 }
