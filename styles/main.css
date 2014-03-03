@@ -30,12 +30,23 @@ nav li a {
 	color:#286305;
 }
 
+#pull {
+	font-size:20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color:#afea52;
+	
+	padding-top: 5px;
+}
+
 /* Defines the font style */
 #topNavLeft li {
 	padding:10px;
 	font-size:20px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-weight:bold;
+	
 }
 
 #topNavLeft li a {

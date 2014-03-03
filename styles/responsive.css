@@ -5,6 +5,7 @@ nav {
 	width: 100%;
 }
 
+/* Navigation is displayed in a line */
 nav li {
 	display:inline-block;
 }
@@ -39,7 +40,7 @@ nav a#pull {
 }
 
 #topNavRight li a {
-	padding: 5px;
+	padding: 15px;
 }
 
 #slideArea {
@@ -61,7 +62,6 @@ nav a#pull {
 #frontPageContent {
 	width:960px;
 	margin:0 auto;
-	overflow:auto;
 	position:relative;
 	margin-top:-100px;
 }
@@ -112,7 +112,13 @@ nav a#pull {
 	height:auto;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
+	#frontPageContent{
+		width:720px;
+	}
+}
+
+@media screen and (max-width: 768px) {
 	nav {
 		height: auto;
 	}
@@ -139,6 +145,14 @@ nav a#pull {
 		width: 100%;
 		text-indent: 25px;
 	}
+	
+	#frontPageContent {
+		width: 480px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	
 }
 
 @media only screen and (max-width: 480px) {
@@ -152,10 +166,25 @@ nav a#pull {
 	}
 	
 	nav a#pull {
-		display: block;
+		display: inline-block;
 		background-color: #286305;
 		width: 100%;
+		height: 35px;
 		position: relative;
+	}
+	
+	nav a#pull:after {
+		content:"";
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	
+	#frontPageContent {
+		width: 320px;
 	}
 }
 
@@ -169,4 +198,9 @@ nav a#pull {
 	nav li a {
 		border-bottom: 1px solid #286305;
 		
+}
+	#frontPageContent {
+		width: 300px;
+	}
+
 }
