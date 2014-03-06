@@ -48,6 +48,10 @@ nav a#pull {
 	width:100%;
 }
 
+#logoBar {
+	display: inline;
+}
+
 #socialTop {
 	float:right;
 	margin-right:40px;
@@ -67,11 +71,15 @@ nav a#pull {
 
 #frontPageLeft {
 	width:600px;
+	position: relative;
 }
 
 #frontPageRight {
 	width:300px;
 	float:right;
+	position: relative;
+	right: 0;
+	top: 0;
 	padding-left:20px;
 	border-left:5px #286305 solid;
 }
@@ -180,6 +188,10 @@ nav a#pull {
 		position: absolute;
 		right: 15px;
 		top: 10px;
+	}
+	
+	nav li {
+		float: none;
 	}
 	
 	#frontPageContent {
