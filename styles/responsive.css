@@ -43,6 +43,14 @@ nav a#pull {
 	padding: 15px;
 }
 
+.navDesktop {
+	display: inline-block;
+}
+
+.navMobile {
+	display: none;
+}
+
 #slideArea {
 	height:500px;
 	width:100%;
@@ -52,26 +60,34 @@ nav a#pull {
 	display: inline;
 }
 
+#logo {
+	width: 552px;
+	height: 114px;
+}
+
 #socialTop {
 	float:right;
 	margin-right:40px;
 }
 
 #socialTop img {
-	height:60px;
+	height:45px;
 	width:auto;
-	padding:10px;
+	padding:5px;
+	padding-top: 10px;
 }
 
 #frontPageContent {
 	width:960px;
 	margin:0 auto;
 	margin-top:-100px;
+	overflow:auto;
 }
 
 #frontPageLeft {
 	width:600px;
 	position: relative;
+	float:left;
 }
 
 #frontPageRight {
@@ -81,7 +97,6 @@ nav a#pull {
 	right: 0;
 	top: 0;
 	padding-left:20px;
-	border-left:5px #286305 solid;
 }
 
 #footer {
@@ -110,6 +125,10 @@ nav a#pull {
 	padding-right:20px;
 }
 
+select {
+	display: none;
+}
+
 #socialBottom {
 	float:right;
 }
@@ -120,8 +139,34 @@ nav a#pull {
 }
 
 @media screen and (max-width: 960px) {
+	#slideArea {
+		height: 300px;
+	}
+	
 	#frontPageContent{
 		width:720px;
+	}
+	
+	#frontPageLeft {
+		width: 420px;
+	}
+	
+	#frontPageRight {
+		width: 250px;
+	}
+
+	.navDesktop {
+		display: none;
+	}
+	
+	.navMobile {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#frontPageRight {
+		border-left:5px #286305 solid;
 	}
 }
 
@@ -131,37 +176,53 @@ nav a#pull {
 	}
 	
 	nav ul {
-		width: 100%;
-		display: block;
+		display: inline;
+		float: left;
 		height: auto;
 	}
 	
-	nav li {
-		width: 50%;
-		float: left;
+	nav a#pull {
+		display: inline-block;
+		background-color: #286305;
+		width: 100%;
+		height: 35px;
 		position: relative;
 	}
 	
-	nav li a {
-		border-bottom: 1px solid ##286305;
-		border-right: 1px solid ##286305;
-	}
-	
-	nav a {
-		text-align: left;
-		width: 100%;
-		text-indent: 25px;
+	nav a#pull:after {
+		content:"";
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
 	}
 	
 	#frontPageContent {
 		width: 480px;
+		overflow:auto;
+	}
+	
+	#frontPageLeft{
+		float:right;
+		width:470px;
+	}
+	
+	#frontPageRight {
+		width: 470px;
+		border-top:5px #286305 solid;
+		padding-top: 10px;
+	}
+	
+	#bottomNavLeft,#bottomNavRight li a {
+		display: none;
+	}
+	
+	select {
+		display: inline-block;
 	}
 }
-
-@media only screen and (max-width: 600px) {
-	
-}
-
 @media only screen and (max-width: 480px) {
 	nav {
 		border-bottom: 0;
@@ -194,8 +255,21 @@ nav a#pull {
 		float: none;
 	}
 	
+	#logo {
+		width: 441px;
+		height: 91px;
+	}
+	
 	#frontPageContent {
 		width: 320px;
+	}
+	
+	#frontPageLeft {
+		width: 310px;
+	}
+	
+	#frontPageRight {
+		width: 310px;
 	}
 }
 
@@ -206,12 +280,21 @@ nav a#pull {
 		width: 100%;
 	}
 	
-	nav li a {
-		border-bottom: 1px solid #286305;
-		
-}
+	#logo {
+		width: 331px;
+		height: 66px;
+	}
+	
 	#frontPageContent {
-		width: 300px;
+		width: 280px;
+	}
+	
+	#frontPageLeft {
+		width: 270px;
+	}
+	
+	#frontPageRight {
+		width: 270px;
 	}
 
 }

@@ -18,24 +18,24 @@
 	<div id="topNavLeft">
         <ul>
             <li><a href="Index.html">Home</a></li>
+            <li class="navMobile"><a href="About.html">About</a></li>
             <li><a href="Route.html">Route</a></li>
             <li><a href="Volunteers.html">Volunteers</a></li>
             <li><a href="Vendors.html">Vendors</a></li>
             <li><a href="Sponsors.html">Sponsors</a></li>
-        </ul>
+            <li class="navMobile"><a href="Contact.html">Contact</a></li>
     </div>
     <div id="topNavRight">
-    	<ul>
-        	<li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+        	<li class="navDesktop"><a href="About.html">About</a></li>
+            <li class="navDesktop"><a href="Contact.html">Contact</a></li>
         </ul>
     </div>
     <a href="#" id="pull">Menu</a>
 </nav>
 <div id="slideArea">
     <div id="logoBar">
-        <div id="logo">
-        <img src="./media/Ciclovia-WI-logo-w-outlines.png" width="55%" height="55%" />
+        <div>
+        <img id="logo" src="./media/Ciclovia-WI-logo-w-outlines.png" />
             <div id="socialTop">
                 <a href="https://www.facebook.com/cicloviawi"><img src="media/layout/Facebook.png" /></a>
                 <a href="https://twitter.com/UWSPAdvenTours"><img src="media/layout/Twitter.png" /></a>
@@ -45,11 +45,7 @@
     </div>
 </div>
 <div id="frontPageContent">
-    <div id="frontPageRight">
-        <h1>Header 3</h1>
-        <h2>Sub-header of some kind</h2>
-    <p>Vivamus vulputate bibendum urna, non lacinia lorem. Fusce vulputate turpis dui, vitae rhoncus quam ultricies quis. Vestibulum elementum tortor eget lacus ullamcorper tincidunt. Aliquam massa urna, egestas et lobortis at, posuere eu leo. Nunc venenatis erat a tortor dictum venenatis. In vitae iaculis erat. Integer convallis condimentum tellus id hendrerit. Vivamus metus eros, lacinia non varius eu, mattis eu sem. Vestibulum in suscipit mi, quis ullamcorper sapien.</p>
-    </div>
+
     <div id="frontPageLeft">
     <h1>Header 1</h1>
     <h2>Sub-header of some kind</h2>
@@ -60,6 +56,11 @@
 <h2>Sub-header of some kind</h2>
 <p>Vivamus vulputate bibendum urna, non lacinia lorem. Fusce vulputate turpis dui, vitae rhoncus quam ultricies quis. Vestibulum elementum tortor eget lacus ullamcorper tincidunt. Aliquam massa urna, egestas et lobortis at, posuere eu leo. Nunc venenatis erat a tortor dictum venenatis. In vitae iaculis erat. Integer convallis condimentum tellus id hendrerit. Vivamus metus eros, lacinia non varius eu, mattis eu sem. Vestibulum in suscipit mi, quis ullamcorper sapien.</p>
     </div>
+        <div id="frontPageRight">
+        <h1>Header 3</h1>
+           <h2>Sub-header of some kind</h2>
+        <p>Vivamus vulputate bibendum urna, non lacinia lorem. Fusce vulputate turpis dui, vitae rhoncus quam ultricies quis. Vestibulum elementum tortor eget lacus ullamcorper tincidunt. Aliquam massa urna, egestas et lobortis at, posuere eu leo. Nunc venenatis erat a tortor dictum venenatis. In vitae iaculis erat. Integer convallis condimentum tellus id hendrerit. Vivamus metus eros, lacinia non varius eu, mattis eu sem. Vestibulum in suscipit mi, quis ullamcorper sapien.</p>
+    </div>
 </div>
 <div id="footer">
     <div id="socialBottom">
@@ -67,22 +68,34 @@
         <a href="https://twitter.com/UWSPAdvenTours"><img src="media/layout/Twitter.png" /></a>
         <a href="http://www.youtube.com/channel/UCpx6N_W9TOdCd1pAiBUWrMA"><img src="media/layout/youtube.jpg" /></a>
     </div>
-	<div id="bottomNavLeft">
         <ul>
+		<div id="bottomNavLeft">
             <li><a href="Index.html">Home</a></li>
             <li><a href="Route.html">Route</a></li>
             <li><a href="Volunteers.html">Volunteers</a></li>
             <li><a href="Vendors.html">Vendors</a></li>
             <li><a href="Sponsors.html">Sponsors</a></li>
             <li><a href="Gallery.html">Gallery</a></li>
+    	</div>
         </ul>
-    </div>
-    <div id="bottomNavRight">
    		<ul>
+    	<div id="bottomNavRight">
         	<li><a href="About.html">About</a></li>
             <li><a href="Contact.html">Contact</a></li>
+    	</div>
         </ul>
-    </div>
+        
+        <select>
+        	<option value="" selected="selected">Go to...</option>
+            <option>---------------</option>
+            <option value ="">Home</option>
+            <option value="">About</option>
+            <option value="">Route</option>
+            <option value="">Volunteers</option>
+            <option value="">Vendors</option>
+            <option value="">Sponsors</option>
+            <option value="">Contact</option>
+        </select>
 </div>
 </body>
 </html>

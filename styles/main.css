@@ -72,6 +72,7 @@ nav li a {
 #slideArea {
 	background-image:url('../media/layout/frontPage.jpg');
 	background-position:center;
+	background-size:auto 130%;
 }
 
 /* Creates background for page content div. */
@@ -88,5 +89,18 @@ nav li a {
 #bottomNavLeft li a, #bottomNavRight li a {
 	color:#286305;
 	font-family:Verdana, Geneva, sans-serif;
+	font-size: 14px;
 	text-decoration:none;
+}
+
+@media screen and (max-width: 960px) {
+	nav {
+		height:40px;
+	}
+	
+	#topNavLeft li {
+		padding-left: 4px;
+		padding-right: 5px;
+		font-size: 17px;
+	}
 }
